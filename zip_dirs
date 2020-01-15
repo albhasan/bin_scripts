@@ -1,8 +1,16 @@
 #!/bin/bash
-# Zip each sub-directory into its own zip file.
+# Zip directory into its own zip file.
 # TODO: chech parallel is installed.
 # TODO: chech zip is installed.
 # TODO: write help.
+
+
+read -p "Zip each directory in the current location. Do you want to continue [y,N]? " -n 1 -r
+echo
+if [[ ! $REPLY =~ ^[Yy]$ ]]
+then
+        [[ "$0" = "$BASH_SOURCE" ]] && exit 1 || return 1
+fi
 
 parallel zip -r {.}.zip {} ::: $(find . -maxdepth 1 -type d)
 
