@@ -4,5 +4,12 @@
 # TODO: test parallel is installed.
 # TODO: write help message.
 
+read -p "Zip each shapefile in the current location. Do you want to continue [y,N]? " -n 1 -r
+echo
+if [[ ! $REPLY =~ ^[Yy]$ ]]
+then
+        [[ "$0" = "$BASH_SOURCE" ]] && exit 1 || return 1
+fi
+
 parallel zip {.}.zip {.}* ::: $(find . -type f -name "*shp")
 
