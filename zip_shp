@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# zip the shapefiles in the given directory into their own zip file.
+# TODO: test parallel is installed.
+# TODO: write help message.
+
+parallel zip {.}.zip {.}* ::: $(find . -type f -name "*shp")
+
