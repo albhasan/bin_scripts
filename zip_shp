@@ -14,5 +14,5 @@ then
         [[ "$0" = "$BASH_SOURCE" ]] && exit 1 || return 1
 fi
 
-parallel -j 0 zip {.}.zip {.}* ::: $(find . -type f -name "*shp")
+parallel -j 0 zip {.}.zip {.}* ::: $(find . -maxdepth 1 -type d -not -path '*/\.*')
 
