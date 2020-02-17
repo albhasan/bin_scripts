@@ -7,8 +7,8 @@ LOG_FILE="/home/alber/Documents/logs/backup_hard_drive.log"
 PRODES_REP="/home/alber/Documents/data/experiments/prodes_reproduction"
 PRODES_REP_DEST="/media/alber/UNTITLED/alber/prodes_reproduction"
 
-L8MOD_FUS="/home/alber/Documents/data/experiments/l8mod-fusion"
-L8MOD_FUS_DEST="/media/alber/UNTITLED/alber/l8mod-fusion"
+#L8MOD_FUS="/home/alber/Documents/data/experiments/l8mod-fusion"
+#L8MOD_FUS_DEST="/media/alber/UNTITLED/alber/l8mod-fusion"
 
 #rsync -rtvuzl --ignore-errors --log-file="$LOG_FILE" "$PRODES_REP"/03_classify/rep_prodes_40 "$PRODES_REP_DEST"/03_classify 
 #rsync -rtvuzl --ignore-errors --log-file="$LOG_FILE" "$PRODES_REP"/03_classify/rep_prodes_41 "$PRODES_REP_DEST"/03_classify 
