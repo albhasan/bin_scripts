@@ -1,4 +1,4 @@
-#/bin/bash 
+#!/bin/bash 
 
 # update GIT REPOSITORIES IN THE CURRRENT DIRECTORY. 
 
