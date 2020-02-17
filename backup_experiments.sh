@@ -1,6 +1,6 @@
 #!/bin/bash
 ################################################################################
-# BACK UP THE SRCERIMENT DIRECTORY
+# BACK UP THE EXPERIMENT DIRECTORY
 ################################################################################
 notify-send "Starting back up of experiments from server..."
 LOG_FILE="/home/alber/Documents/logs/backup_experiments.sh.log"
